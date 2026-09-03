@@ -85,8 +85,17 @@ After the third failed retry, the failure is reported as `critical` and the next
 
 ### Evidence
 
-- [Rates workflow — screenshot 1](evidence/rates-workflow-01.png)
-- [Rates workflow — screenshot 2](evidence/rates-workflow-02.png)
+**Primary loading path**
+
+![Primary FreeCurrencyAPI path](evidence/rates-primary.webp)
+
+**Fallback and recovery path**
+
+![Frankfurter fallback and progressive retry path](evidence/rates-fallback.webp)
+
+**Stored rates**
+
+![fx_rates n8n Data Table](evidence/fx-rates-table.webp)
 
 ---
 
@@ -150,9 +159,9 @@ The full system prompt is configured directly in the AI Agent workflow. It is no
 
 ### Evidence
 
-- [AI Agent demo video](evidence/ai-agent-demo.mp4)
+[**Watch the AI Agent demo video (MP4)**](evidence/ai-agent-demo.mp4)
 
-The demo should cover the required greeting, successful conversion, unknown-currency handling, and conversational follow-up.
+The demo includes the chat greeting, multilingual requests, an error path, and a successful follow-up that reuses conversion context from the preceding message.
 
 ---
 
